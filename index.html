@@ -100,7 +100,59 @@
 
     
     
-
+<style>
+  /* Mobile-specific styles */
+@media (max-width: 768px) {
+  .hero_image_wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+    /* Hide the banner image */
+    .hero_image {
+      display: none;
+    }
+    .hero_inner{
+      height: auto;
+    }
+    .hero_content{
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: auto;
+      margin-top: 10px;
+    }
+    /* Adjust railcard items to display two in one row */
+    .railcard_finder_search_results .railcard_item {
+      width: 48%;
+      margin: 1%;
+      display: inline-block;
+      vertical-align: top;
+    }
+  
+    /* Ensure inner content fits properly */
+    .railcard_finder_search_results .railcard_item_inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Adjustments for smaller text and better spacing */
+    .railcard_item h3 {
+      font-size: 16px;
+    }
+  
+    .railcard_item p {
+      font-size: 14px;
+    }
+  
+    .railcard_item_link {
+      font-size: 14px;
+    }
+  }
+  
+</style>
     
     
    
