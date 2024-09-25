@@ -1,45 +1,10 @@
 
-* {
-	box-sizing: initial;
-}
-
-html {
-	overflow-y: scroll;
-	overflow-x: hidden;
-}
-
-body {
-	font-family: 'Roboto', arial, helvetica, sans-serif;
-	font-size: 16px;
-	padding: 0px;
-	margin: 0px;
-	margin-left: auto;
-	margin-right: auto;
-	color: #1a1a1a;
-	background-color: white;
-	font-weight: 400;
-}
-
-a {
-	color: #0d4da2;
-}
-
-a:hover,
-a:focus {
-	text-decoration: underline;
-}
-
-.anchor a {
-	left: 0;
-	position: absolute;
-	top: -120px;
-}
-
 img {
 	border: 0px;
 }
 
-h1, .h1 {
+
+.rail-heading{
 	color: #0d4da2;
 	font-size: 34px;
 	margin: 0px;
@@ -48,17 +13,7 @@ h1, .h1 {
 	font-weight: 500;
 }
 
-h2, .h2 {
-	color: #0d4da2;
-	font-size: 33px;
-	margin: 0px;
-	margin-bottom: 4px;
-	padding-top: 12px;
-	padding-bottom: 4px;
-	font-weight: 500;
-}
-
-h3, .h3 {
+.h3-rail{
 	color: #0d4da2;
 	font-size: 20px;
 	margin: 0px;
@@ -67,7 +22,7 @@ h3, .h3 {
 	font-weight: 500;
 }
 
-h4, .h4 {
+.h4-rail {
 	color: #0d4da2;
 	font-size: 20px;
 	margin: 0px;
@@ -76,37 +31,9 @@ h4, .h4 {
 	font-weight: 500;
 }
 
-h5, .h5 {
-	color: #0d4da2;
-	font-size: 16px;
-	margin: 0px;
-	padding-top: 12px;
-	padding-bottom: 1px;
-	font-weight: 500;
-}
 
-h6, .h6 {
-	color: #0d4da2;
-	font-size: 16px;
-	margin: 0px;
-	padding-top: 12px;
-	padding-bottom: 1px;
-	font-weight: 500;
-}
 
-p {
-	margin: 0px;
-	padding-top: 2px;
-	padding-bottom: 6px;
-}
 
-ul,
-ol {
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-top: 6px;
-	padding-bottom: 6px;
-}
 
 
 .row * {
@@ -172,7 +99,7 @@ hr {
 
 /* Buttons Start */
 
-.btn {
+.btn-rail {
 	background-color: transparent;
 	border: none;
 	border-radius: 10px;
@@ -190,37 +117,37 @@ hr {
 	transition: all 0.3s ease-in-out;
 }
 
-.btn.btn_small {
+.btn-rail.btn-rail_small {
 	height: auto;
 	line-height: initial;
 	padding: 10px;
 }
 
-.text_center .btn {
+.text_center .btn-rail {
 	margin-left: 10px;
 	margin-right: 10px;
 }
 
-.btn:focus,
-.btn:hover {
+.btn-rail:focus,
+.btn-rail:hover {
 	text-decoration: none;
 }
 
-.btn.btn_blue {
+.btn-rail.btn-rail_blue {
 	background-color: #154da2;
 }
 
-.btn.btn_blue:hover,
-.btn.btn_blue:focus {
+.btn-rail.btn-rail_blue:hover,
+.btn-rail.btn-rail_blue:focus {
 	background: #4471b5; /* 80% opacity of the primary colour */
 }
 
-.btn.btn_light_blue {
+.btn-rail.btn-rail_light_blue {
 	background-color: #00a0e6;
 }
 
-.btn.btn_light_blue:hover,
-.btn.btn_light_blue:focus {
+.btn-rail.btn-rail_light_blue:hover,
+.btn-rail.btn-rail_light_blue:focus {
 	background: #33b3eb; /* 80% opacity of the primary colour */
 }
 /* Buttons End */
@@ -233,18 +160,15 @@ hr {
 }
 
 
-.homepage h1,
-.homepage h2,
-.homepage h3,
-.homepage h4,
-.homepage h5,
-.homepage h6 {
+.homepage .rail-heading,
+
+.homepage .h3-rail,
+.homepage .h4-rail {
 	color: #154da2;
 	font-weight: 700;
 }
 
-.homepage h1,
-.homepage h2 {
+.homepage .rail-heading {
 	font-size: 34px;
 }
 
@@ -307,26 +231,23 @@ hr {
     padding-top: 60px;
 }
 
-.hero_content h1,
-.hero_content h2 {
+.hero_content .rail-heading {
 	font-weight: 700;
 }
 
-.hero_content h1 {
+.hero_content .rail-heading {
 	color:#154da2;
 	font-size: 54px;
 	line-height: 56px;
 }
 
-.hero_content h2 {
-	color:#293269;
-}
+
 
 .hero_content p {
 	font-size: 20px;
 }
 
-.hero_content .btn.btn_text {
+.hero_content .btn-rail.btn-rail_text {
 	color: #293269;
 }
 
@@ -360,13 +281,13 @@ hr {
 	width: 100%;
 }
 
-.hero_image a.btn_admin {
+.hero_image a.btn-rail_admin {
 	bottom: 30px;
 	right: 30px;
 	position: absolute;
 }
 
-.hero_content .btn {
+.hero_content .btn-rail {
 	font-size: 16px;
 	font-weight: 500;
 }
@@ -429,11 +350,7 @@ hr {
     margin-bottom: 40px;
 }
 
-.railcard_finder h2 {
-	margin-top: 0;
-	padding-bottom: 30px;
-	padding-top: 0;
-}
+
 
 .railcard_item {
 	background-color: #fff;
@@ -471,17 +388,17 @@ hr {
 	padding-bottom: 20px;
 }
 
-.railcard_item_logo > h3 {
+.railcard_item_logo > .h3-rail {
 	line-height: 25px;
 	margin: 0;
 	padding: 0;
 }
 
-.railcard_item_logo > h3 > img {
+.railcard_item_logo > .h3-rail > img {
 	float: left;
 }
 
-.railcard_item_logo > h3 > span {
+.railcard_item_logo > .h3-rail > span {
 	display: inline-block;
 	margin-left: 5px;
 }
@@ -512,3 +429,55 @@ text-decoration: none;
 
 /* Railcard Finder End */
 
+/* Mobile View */
+ /* Mobile-specific styles */
+ @media (max-width: 768px) {
+	.hero_image_wrapper {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+  }
+	  /* Hide the banner image */
+	  .hero_image {
+		display: none;
+	  }
+	  .hero_inner{
+		height: auto;
+	  }
+	  .hero_content{
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: auto;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	  }
+	  /* Adjust railcard items to display two in one row */
+	  .railcard_finder_search_results .railcard_item {
+		width: 48%;
+		margin: 1%;
+		display: inline-block;
+		vertical-align: top;
+	  }
+	
+	  /* Ensure inner content fits properly */
+	  .railcard_finder_search_results .railcard_item_inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	  }
+	
+	  /* Adjustments for smaller text and better spacing */
+	  .railcard_item .h3-rail {
+		font-size: 16px;
+	  }
+	
+	  .railcard_item p {
+		font-size: 14px;
+	  }
+	
+	  .railcard_item_link {
+		font-size: 14px;
+	  }
+	}
